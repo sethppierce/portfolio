@@ -1,3 +1,3 @@
-# Modify this portfolio
+# My Portfolio
 
-Make it your own! 
+[Live Site](https://sethppierce-portfolio.netlify.app/)
