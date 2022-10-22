@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+import javascriptIcon from "@iconify/icons-logos/javascript";
 import reactIcon from "@iconify/icons-logos/react";
-import vueIcon from "@iconify/icons-logos/vue";
+import cssIcon from "@iconify/icons-logos/css-3";
 
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      var profilepic = "images/portfolio/" + this.props.sharedBasicInfo.image;
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
@@ -21,7 +21,7 @@ class About extends Component {
           <h1 style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>
-          <div className="row center mx-auto mb-5">
+          <div className="row center mx-auto mb-5" id="abotuB">
             <div className="col-md-4 mb-5 center">
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
@@ -31,7 +31,7 @@ class About extends Component {
                     alt="Avatar placeholder"
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={javascriptIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
@@ -39,7 +39,7 @@ class About extends Component {
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
-                    icon={vueIcon}
+                    icon={cssIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
